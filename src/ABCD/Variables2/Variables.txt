@@ -1,0 +1,79 @@
+Java Variables
+--------------
+
+-In Java, variables are classified based on their data type and their scope.
+-Here's a breakdown of the various types:
+
+1. Based on Data Type
+    i).Primitive Variables
+        -These are the most basic data types in Java and are predefined by the language.
+
+        byte: 8-bit integer.
+        short: 16-bit integer.
+        int: 32-bit integer.
+        long: 64-bit integer.
+        float: Single-precision 32-bit floating-point.
+        double: Double-precision 64-bit floating-point.
+        boolean: Represents true or false.
+        char: 16-bit Unicode character.
+
+    ii). Reference Variables
+          -These variables are used to refer to objects and arrays.
+          -Object: Instances of classes (including arrays).
+          -String: Special reference type for text data.
+
+
+
+2. Based on Scope
+    i). Local Variables
+        -Declared inside a method, constructor, or block.
+        -Scope is limited to the method, constructor, or block.
+        -Must be initialized before use.
+
+    ii). Instance Variables (Non-static Fields)
+        -Declared in a class but outside a method, constructor, or block.
+        -Each instance (object) of the class has its own copy of the instance variables.
+        -Typically used to store object state.
+
+    iii). Class Variables (Static Fields)
+        -Declared in a class using the static keyword but outside a method, constructor, or block.
+        -A single copy of the class variable is shared among all instances of the class.
+        -Used to store common properties shared by all objects of the class.
+
+=> Special Types
+    i). Parameters
+        -Variables that are passed to methods or constructors.
+        -Treated as local variables within the method or constructor.
+
+    ii). Final Variables
+        -Declared with the final keyword.
+        -Once assigned a value, it cannot be changed.
+        -Can be used with local, instance, and class variables.
+
+
+
+ ===========================================================================
+ => Why use static on a variable?
+ -static variables can be accessed directly using the class name without needing to create an instance of the class.
+ -This makes them useful for defining constants or utility variables.
+
+     public class Constants {
+         static final double PI = 3.14159;
+         static int count = 0;
+     }
+
+     System.out.println(Constants.PI); // Output: 3.14159
+
+-static variables are often used for class-level information that is common to all objects.
+
+-In utility or helper classes, static variables and methods are often used because these classes usually don't require
+instantiation. For example, java.lang.Math uses static methods and constants.
+
+    public class MathUtils {
+        static int add(int a, int b) {
+            return a + b;
+        }
+    }
+
+    int result = MathUtils.add(5, 3); // No need to instantiate MathUtils
+

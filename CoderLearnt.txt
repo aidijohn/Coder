@@ -1,0 +1,5 @@
+-How to use Scanner.in
+-Using a while loop.
+-How to iterate a list using for.
+-How to do exception error handling.
+-How to use Math.round
