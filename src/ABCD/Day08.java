@@ -1,4 +1,4 @@
-//Complete this code or write your own from scratch
+package ABCD;//Complete this code or write your own from scratch
 import java.util.*;
 
 class Day08{
@@ -26,3 +26,6 @@ class Day08{
         in.close();
     }
 }
+
+//TASK
+//ToDo: https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem

@@ -3,3 +3,41 @@
 -How to iterate a list using for.
 -How to do exception error handling.
 -How to use Math.round
+-2 ways of declaring arrays.
+========================================
+#Declaring Arrays
+-List<String> arrTemp = new ArrayList<>()
+-String[] arrTemp
+
+--------------------------------------------------------------
+int n = Integer.parseInt(bufferedReader.readLine().trim());
+
+-bufferedReader.readLine() reads a line of text from the input.
+-trim() removes any leading and trailing whitespace.
+-Integer.parseInt() converts the trimmed string to an integer, which represents the size of the array, n
+---------------------------------------------------------------------------------------------------------
+String[] arrTemp = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+replaceAll("\\s+$", "") removes any trailing whitespace from the line.
+split(" ") splits the line into an array of strings based on spaces.
+
+
+============================================================================================COLD
+(x) -> REVIEW
+
+InputStreams1
+    -Day 00,
+    -double mealCost = 10.2; int tax = 20, tip = 30;   //Round off the result to the nearest int and save it as totalCost.
+    -(01), (02),
+    -03
+Easy
+    (05)
+Variables2
+    Variables.txt, Variable Types, Person
+    06_Strings, 07_ReverseArray
+============================================================================================WARM
+Variables2
+    Variables.txt, Person
+    06_Strings, 07_ReverseArray
+...
+Debugging

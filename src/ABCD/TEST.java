@@ -1,16 +1,12 @@
 package ABCD;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TEST {
     public static void main(String[] args) {
+        List<Integer> numbers = new ArrayList<>();
 
-        System.out.println("Enter your number: ");
-        Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
 
-        for (int i = 0; i<=10; i++) {
-            System.out.println(N+" x "+i+" = "+(N*i));
-        }
     }
 }

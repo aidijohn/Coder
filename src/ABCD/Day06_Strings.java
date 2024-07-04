@@ -39,3 +39,8 @@ public class Day06_Strings {
 //Example
 //s = adbecf
 //Print abc def
+
+//Do this operation T number of times which is defined by user.
+//The string should also be entered by user for each test case.
+
+//Try 'abcd' as T, Get Exception, Handle that
