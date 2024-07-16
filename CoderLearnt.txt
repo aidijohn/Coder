@@ -34,10 +34,13 @@ Easy
     (05)
 Variables2
     Variables.txt, Variable Types, Person
-    06_Strings, 07_ReverseArray
+    06_Strings, 07_ReverseArray,
+    Dictionary_HashMap
 ============================================================================================WARM
 Variables2
-    Variables.txt, Person
+    Variables.txt
     06_Strings, 07_ReverseArray
-...
-Debugging
+    Dictionary_HashMap
+
+..........
+-Debugging

@@ -10,12 +10,12 @@ public class Day06_Strings_Ex_Handle {
 
         // Prompt the user to enter a number until a valid integer is entered
         while (!validInput) {
-            System.out.print("Please enter a number: ");
+            System.out.print("Enter the number of tests: ");
             if (scanner.hasNextInt()) {
                 T = scanner.nextInt();
                 validInput = true;
             } else {
-                System.out.println("Please enter numbers only.");
+                System.out.println("Please enter digits only.");
                 scanner.next(); // Clear the invalid input
             }
         }

@@ -34,7 +34,7 @@ import java.util.Scanner;
 //TASK
 //ToDo: Given an array, A, of N integers, print A's elements in reverse order as a single line of space-separated numbers.
 
-// Read the number of elements in the array
+// Read the number/size of elements in the array
 //Input the elements to the array
 
 //Example
