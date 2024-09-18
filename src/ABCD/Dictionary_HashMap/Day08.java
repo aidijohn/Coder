@@ -1,31 +1,40 @@
-package ABCD.Dictionary_HashMap;//Complete this code or write your own from scratch
+package ABCD.Dictionary_HashMap;
 import java.util.*;
 
-class Day08{
-    public static void main(String []argh){
+class Day08 {
+    public static void main(String[] argh) {
         Scanner in = new Scanner(System.in);
+        System.out.println("Phone Book Size/ Entries?");
         int n = in.nextInt();
-        Dictionary<String,Integer> diary = new Hashtable<String,Integer>();
-        for(int i = 0; i < n; i++){
+        Dictionary<String, Integer> diary = new Hashtable<String, Integer>();
+        System.out.println("Add entries in the form; name number");
+
+        // Add entries to the phonebook
+        for (int i = 0; i < n; i++) {
             String name = in.next();
             int phone = in.nextInt();
-            // Write code here
-            diary.put(name,phone); 
+            diary.put(name, phone);
         }
-        while(in.hasNext()){
-            String s = in.next();   //reads the name to check
-            // Write code here
-            Integer element = diary.get(s); //retrieve the phone number associated with the name s from the diary dictionary
-            if(element == null){
+        System.out.println("Phone book complete, do your first name search..");
+
+        // Search for names in the phonebook
+        while (in.hasNext()) {       //while(true)  --can also work
+
+            String s = in.next();   // Read the name to check
+
+            // Retrieve the phone number associated with the name s from the diary
+            Integer element = diary.get(s);
+            if (element == null) {
                 System.out.println("Not found");
+            } else {
+                System.out.println(s + "=" + element);
             }
-            else{
-                System.out.println(s+"="+element);
-            }
+            System.out.println("Search another name..");
         }
         in.close();
     }
 }
+
 
 //TASK (HashTable)
 //ToDo: Given n names and phone numbers, assemble a phone book that maps friends' names to their respective phone numbers.
@@ -50,12 +59,20 @@ class Day08{
 //On a new line for each query, print Not found if the name has no corresponding entry in the phone book; otherwise, print the
 // full name and phoneNumber in the format name=phoneNumber.
 //
+//================================================================
 //Sample Input
 //
 //3
 //sam 99912222
 //tom 11122222
 //harry 12299933
+//
 //sam
 //edward
 //harry
+//===============================================================
+//Sample Output
+
+//sam=99912222
+//Not found
+//harry=12299933

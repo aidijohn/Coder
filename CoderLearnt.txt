@@ -1,9 +1,18 @@
--How to use Scanner.in
--Using a while loop.
--How to iterate a list using for.
--How to do exception error handling.
--How to use Math.round
+#Code-Completion
+  File > Editor > General > Code Completion
+
+   -Machine Learning-Assisted Completion
+     -Enable Full Line suggestions
+
+#Code usage of class, method or variable across the project
+  -Place caret at a symbol
+  -Ctrl + Alt + F7
+============================================================
+
+-Creating constructor, using it as a method.
+-Using Instance Methods
 -2 ways of declaring arrays.
+-scanner.next();    //clear invalid user input after catching exception --avoid exception msg looping
 ========================================
 #Declaring Arrays
 -List<String> arrTemp = new ArrayList<>()
@@ -24,23 +33,43 @@ split(" ") splits the line into an array of strings based on spaces.
 
 ============================================================================================COLD
 (x) -> REVIEW
+(--) -> Follow up/ done
 
 InputStreams1
     -Day 00,
-    -double mealCost = 10.2; int tax = 20, tip = 30;   //Round off the result to the nearest int and save it as totalCost.
-    -(01), (02),
-    -03
+    -double mealCost = 10.2; int tax = 20, tip = 30; //Round off the result to the nearest int and save it as totalCost.
+    -(01), (02), (03)
 Easy
-    (05)
+    05, --05_Endless, --05_Limit
 Variables2
-    Variables.txt, Variable Types, Person
+    Variables.txt, (Variable Types), Person
     06_Strings, 07_ReverseArray,
-    Dictionary_HashMap
+Dictionary_HashMap
+    DictionaryPractice, Day08
+Recursion
+    RecursionNotes, RecursionPractice, Day09
+Binaries
+    10
+TWOD Arrays
+    11
 ============================================================================================WARM
+Easy
+    05, --05_Endless, --05_Limit
 Variables2
-    Variables.txt
+    Variables.txt, Person
     06_Strings, 07_ReverseArray
-    Dictionary_HashMap
-
-..........
+Dictionary_HashMap
+    DictionaryPractice, Day08
+Recursion
+    RecursionPractice, Day09
+Binaries
+    10
+TWOD Arrays
+    11
+============================================================================================PROJ
+*LibraryCatalogue
+*(SBoot CRUD)
+...............................................................................................
 -Debugging
+
+//https://github.com/Manush54/Java-Hackerrank-Solutions/tree/main

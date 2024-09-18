@@ -4,23 +4,24 @@ import java.util.Scanner;
 
 public class TEST {
     public static void main(String[] args) {
-        System.out.println("Enter the size of Array: ");
         Scanner scanner = new Scanner(System.in);
-        int arrSize = scanner.nextInt();
+        System.out.println("Whats your Array size?");
+        int N = scanner.nextInt();
 
-        int[] intArray = new int[arrSize];
+        int[] A = new int[N];
 
-        for (int i=0; i<arrSize; i++){
-            intArray[i] = scanner.nextInt();
+        for(int i=0; i<N; i++){
+            System.out.println("Add element");
+
+            A[i] = scanner.nextInt();
         }
 
-        for (int i=arrSize-1; i>=0; i--) {
-            System.out.print(intArray[i]);
-            if (i > 0) {
-                System.out.print(" ");  //Print Space: If the condition is true (i.e., i is greater than 0), it prints a space " " before printing the next element.
-            }
+        System.out.println("Here is the reversed Array:");
+        for (int i = N-1; i>=0; i--) {
+            System.out.print(A[i]);
+            System.out.print(" ");
         }
-        scanner.close();
+
     }
 }
 

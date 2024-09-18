@@ -7,7 +7,7 @@ public class DictionaryPractice {
     public static void main(String[] args) {
 
         // English to Spanish Dictionary
-        Map<String, String> englSpanDictionary = new HashMap<String, String>();     //HashMap is a type of Map interface
+        Map<String, String> englSpanDictionary = new HashMap<String, String>();  //HashMap is a type of Map interface
 
         // Putting things inside our dictionary
         englSpanDictionary.put("Monday", "Lunes");
@@ -84,6 +84,10 @@ public class DictionaryPractice {
 //ToDo: - Create a HashMap of Days of the week, with English words as keys and their Swahili translations as values.
 // - Print out all the keys.
 // - Print out all the values.
+// - Print out one value using its key.
+// - Print out the size.
+// .
+// Just View
 // - Create a hashmap of shopping items with their Boolean values, and add items.
 // - Print out an item's boolean value.
 // - PrintOut Key=Value pairs.

@@ -58,8 +58,8 @@ public class RecursionPractice {
         }
     }
     public static void main(String[] args) {
-        System.out.println(Summation(3));
-        System.out.println(Factorial(3));
+        System.out.println(Summation(4));
+        System.out.println(Factorial(5));
         System.out.println(Exponentiation(5,3));
     }
 }

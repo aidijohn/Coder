@@ -25,3 +25,5 @@ public class Day00 {
 //ToDo 1: Type your name in the console, and print it
 //     2: Type in some names to a list, type exit then display the list of names. {while, for}
 //     3: Type in some numbers to a list, after hitting exit, only display the even numbers.
+//         ii. Catch error, when a non-number is provided.
+

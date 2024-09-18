@@ -1,0 +1,47 @@
+//Building a Catalogue
+Book Properties: title, pageCount, ISBN, isCheckedOut, int dayCheckedOut
+
+ 1. What's Available?
+ 2. Check In a Book
+ 3. Check Out a Book
+ 4. Container For Books
+ 5. Is a given Book returned late?
+ 6. Is Book checked out?
+
+
+//Steps
+-Define Properties
+-Contsructor: How do we create our book instance? What do we need to create it?
+-Define Getters, Setters (Get and set the values of our properties)
+  -We will only set the setIsCheckedOut and setDayCheckedOut{pri} values
+
+    pri because => //private so that the catalogue library can't access this,
+                     Can only be accessed using the setIsCheckedOut setter function
+Main
+-Define book properties: bookCollection (Dictionary to hold books), (i)currentDay, (i)lengthOfCheckOutPeriod,
+  (d)initialLateFee, (d)feePerLateDay
+-Constructors for Library Catalogue
+ i. bookCollection
+ ii. all except currentDay
+ Note: We can have two constructors for flexibility (More than one way to create our Book)
+-Getters
+-Setters
+  nextDay --Increment currentDay, setDay
+-Instance methods
+  checkoutBook, returnBook, sorryBookAlreadyCheckedOut
+
+================================================================================================================
+
+You just checked out Harry Potter, It is due on Date: 7			//We started on Day 0, 0 + 7 = 7
+Sorry, Harry Potter is already checked out, It should be back on day 7. //We check out on Day 2..so still due date is still 7
+You owe the Library $10.5 because your Book is 10 Days overdue.		//We return on Day 17 which is 10 days late i.e (10*1)+0.5 = 10.5
+You just checked out Harry Potter, It is due on Date: 24		//Because we returned with success, new checkin day is Day 17+7 = 24
+
+Process finished with exit code 0
+
+1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 2 4 4 0
+0 0 0 2 0 0
+0 0 1 2 4 0

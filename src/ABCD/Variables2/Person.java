@@ -44,7 +44,6 @@ public class Person {
     }
 }
 
-//TASK Day04
 //ToDo 1: https://www.hackerrank.com/challenges/30-class-vs-instance/problem.
 // Write a Person class with an instance variable, 'age', and a constructor that takes an integer, 'initialAge' as a parameter.
 // The constructor must assign 'initialAge' to 'age' after confirming the argument passed as 'initialAge' is not negative;
@@ -60,7 +59,7 @@ public class Person {
 //Implement the Functionality.
 //-Input the number of T continuous tests
 //-For each Test case, read an integer age from the input.
-//-Increment the inputed age by 3, i.e. run yearPasses 3 times.
+//-Increment the inputed age by 3, (use your instance method for this).
 //-Find out am I old?
 
 //USE DESCRIPTIONS FOR INPUTS
